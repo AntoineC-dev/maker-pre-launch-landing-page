@@ -1,0 +1,82 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 767px) {
+    min-height: 100vh;
+    background-image: url('./assets/illustration-hero-mobile.png');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 0 8rem;
+  }
+}
+
+.logo {
+  padding: var(--space-xl);
+  display: grid;
+  place-items: center;
+
+  @media (min-width: 768px) {
+    padding: var(--space-2xl) var(--space-xl);
+    place-items: start;
+  }
+}
+
+.content {
+  flex-grow: 1;
+  padding: var(--space-3xl) var(--space-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: var(--fs-title-100);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-sm);
+    color: hsl(var(--clr-light));
+    max-width: 11.5ch;
+  }
+
+  p {
+    max-width: 35ch;
+    margin-block: var(--space-md) var(--space-lg);
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: var(--space-lg);
+    --img-offset: 25rem;
+    --squiggle-size: 78%;
+    --squiggle-position: center;
+    padding: var(--space-2xl) 0;
+    background: url('./assets/bg-hero-squiggle.svg') var(--squiggle-position) / auto var(--squiggle-size) no-repeat,
+      url('./assets/illustration-hero-left.svg') calc(50% - var(--img-offset)) / contain no-repeat,
+      url('./assets/illustration-hero-right.svg') calc(50% + var(--img-offset)) / contain no-repeat;
+    /* outline: 1px solid red; */
+    h1 {
+      max-width: 16ch;
+    }
+
+    p {
+      max-width: 48ch;
+    }
+  }
+
+  @media (min-width: 980px) {
+    margin-top: var(--space-xl);
+    --img-offset: 32rem;
+    --squiggle-size: 90%;
+    --squiggle-position: top;
+
+    p {
+      max-width: 58ch;
+      margin-block: var(--space-md) var(--space-3xl);
+    }
+  }
+}

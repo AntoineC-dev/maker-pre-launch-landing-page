@@ -169,6 +169,10 @@ a:not([class]) {
   border: 0;
 }
 
+.text-accent {
+  color: hsl(var(--clr-green));
+}
+
 /* ----------------- */
 /* General styles    */
 /* ----------------- */
