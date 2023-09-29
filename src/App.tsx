@@ -1,9 +1,10 @@
 import styles from './App.module.css';
+import { Header } from './layouts';
 
 function App() {
   return (
     <div className={styles.wrapper}>
-      <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+      <Header />
     </div>
   );
 }
