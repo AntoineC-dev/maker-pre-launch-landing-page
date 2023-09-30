@@ -23,6 +23,7 @@
   --lh-base: 1.5;
 
   /* font-size */
+  --fs-form-error: 0.75rem;
   --fs-body: 0.9375rem;
   --fs-price: 2.5rem;
   --fs-title-100: 2rem;
@@ -35,7 +36,8 @@
   }
 
   /* outline */
-  --outline-focus: 4px dotted hsl(var(--clr-green));
+  --outline-focus: 2px solid hsl(var(--clr-green));
+  --outline-error: 2px solid hsl(var(--clr-error));
 
   /* border-radius */
   --br-base: 0.5rem;

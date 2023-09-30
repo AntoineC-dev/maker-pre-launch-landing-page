@@ -1,5 +1,5 @@
 import styles from './App.module.css';
-import { Header, Offers, Products } from './layouts';
+import { Header, Newsletter, Offers, Products } from './layouts';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Header />
       <Products />
       <Offers />
+      <Newsletter />
     </div>
   );
 }
