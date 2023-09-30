@@ -3,7 +3,6 @@ import logo from '../../assets/logo.svg';
 import scrollIcon from '../../assets/icon-scroll.svg';
 
 function Header() {
-  const scrollMainToContent = () => console.log('Scroll to main content');
   return (
     <header className={styles.wrapper}>
       <div className={styles.logo}>
@@ -17,9 +16,9 @@ function Header() {
           The 9-5 grind is so last century. We believe in living life on your own terms. Whether you’re looking to
           escape the rat race or set up a side hustle, we’ve got you covered.
         </p>
-        <button onClick={scrollMainToContent} aria-label="Scroll to main content">
+        <a href="#products" aria-label="Scroll to products section">
           <img src={scrollIcon} alt="" />
-        </button>
+        </a>
       </div>
     </header>
   );

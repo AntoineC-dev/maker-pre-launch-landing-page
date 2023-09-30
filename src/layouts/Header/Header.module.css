@@ -45,8 +45,9 @@
     margin-block: var(--space-md) var(--space-lg);
   }
 
-  button {
+  a {
     cursor: pointer;
+    text-decoration: none;
   }
 
   @media (min-width: 768px) {
