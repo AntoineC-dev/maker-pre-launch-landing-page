@@ -1,11 +1,12 @@
 import styles from './App.module.css';
-import { Header, Products } from './layouts';
+import { Header, Offers, Products } from './layouts';
 
 function App() {
   return (
     <div className={styles.wrapper}>
       <Header />
       <Products />
+      <Offers />
     </div>
   );
 }
