@@ -5,7 +5,7 @@
 
   @media (max-width: 767px) {
     min-height: 100vh;
-    background-image: url('./assets/illustration-hero-mobile.png');
+    background-image: url('/assets/illustration-hero-mobile.png');
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: 0 8rem;
@@ -56,9 +56,9 @@
     --squiggle-size: 78%;
     --squiggle-position: center;
     padding: var(--space-2xl) 0;
-    background: url('./assets/bg-hero-squiggle.svg') var(--squiggle-position) / auto var(--squiggle-size) no-repeat,
-      url('./assets/illustration-hero-left.svg') calc(50% - var(--img-offset)) / contain no-repeat,
-      url('./assets/illustration-hero-right.svg') calc(50% + var(--img-offset)) / contain no-repeat;
+    background: url('/assets/bg-hero-squiggle.svg') var(--squiggle-position) / auto var(--squiggle-size) no-repeat,
+      url('/assets/illustration-hero-left.svg') calc(50% - var(--img-offset)) / contain no-repeat,
+      url('/assets/illustration-hero-right.svg') calc(50% + var(--img-offset)) / contain no-repeat;
     /* outline: 1px solid red; */
     h1 {
       max-width: 16ch;
