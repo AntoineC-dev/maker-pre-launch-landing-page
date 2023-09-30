@@ -59,6 +59,12 @@
   --space-8xl: 9rem; /* 128px */
   --space-9xl: 10rem; /* 128px */
   --space-10xl: 12rem; /* 128px */
+
+  --space-section: 9rem;
+
+  @media (min-width: 1080px) {
+    --space-section: 12rem;
+  }
 }
 
 /* ----------------- */
