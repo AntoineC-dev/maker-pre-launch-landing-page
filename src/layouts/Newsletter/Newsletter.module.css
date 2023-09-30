@@ -1,5 +1,6 @@
 .wrapper {
   padding: var(--space-section) var(--space-md);
+  background: url('/assets/bg-footer-squiggle.svg') right 9rem / 120% auto no-repeat;
 
   h2 {
     color: hsl(var(--clr-light));
@@ -7,6 +8,10 @@
     font-size: var(--fs-title-200);
     font-weight: var(--fw-bold);
     margin-bottom: var(--space-lg);
+  }
+
+  @media (min-width: 768px) {
+    background: url('/assets/bg-footer-squiggle.svg') right / 120% auto no-repeat;
   }
 }
 
