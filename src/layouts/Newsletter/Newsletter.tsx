@@ -13,8 +13,10 @@ function Newsletter() {
   form.useValidate(() => {
     const email = form.names.email;
     const value = form.getValue(email);
-    if (!emailRegex.test(value)) {
-      form.setError(email, "Format d'email invalide");
+    if (value.length === 0) {
+      form.setError(email, 'Oops! Please add your email');
+    } else if (!emailRegex.test(value)) {
+      form.setError(email, 'Oops! That doesn’t look like an email address');
     }
   });
 
