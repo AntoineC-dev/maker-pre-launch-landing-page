@@ -37,7 +37,7 @@
 
   .content {
     text-align: center;
-    h3 {
+    h2 {
       color: hsl(var(--clr-light));
       font-size: var(--fs-title-300);
       font-weight: var(--fw-bold);

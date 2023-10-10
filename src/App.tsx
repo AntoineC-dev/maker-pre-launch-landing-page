@@ -3,12 +3,12 @@ import { Header, Newsletter, Offers, Products } from './layouts';
 
 function App() {
   return (
-    <div className={styles.wrapper}>
+    <main className={styles.wrapper}>
       <Header />
       <Products />
       <Offers />
       <Newsletter />
-    </div>
+    </main>
   );
 }
 

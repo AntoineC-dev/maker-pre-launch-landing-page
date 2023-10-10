@@ -10,7 +10,7 @@ function Products() {
             <img src={product.icon} alt="" aria-hidden="true" />
           </div>
           <div className={styles.content}>
-            <h3>{product.title}</h3>
+            <h2>{product.title}</h2>
             <p>{product.text}</p>
           </div>
         </div>
